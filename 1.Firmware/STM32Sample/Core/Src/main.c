@@ -25,6 +25,7 @@
 #include "tim.h"
 #include "usart.h"
 #include "gpio.h"
+#include "fsmc.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -96,6 +97,7 @@ int main(void)
   MX_USART1_UART_Init();
   MX_FATFS_Init();
   MX_TIM6_Init();
+  MX_FSMC_Init();
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */

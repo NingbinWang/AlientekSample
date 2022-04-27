@@ -69,6 +69,8 @@ void Error_Handler(void);
 #define OV_D4_GPIO_Port GPIOC
 #define OV_D5_Pin GPIO_PIN_5
 #define OV_D5_GPIO_Port GPIOC
+#define LCD_BK_Pin GPIO_PIN_0
+#define LCD_BK_GPIO_Port GPIOB
 #define OV_D6_Pin GPIO_PIN_6
 #define OV_D6_GPIO_Port GPIOC
 #define OV_D7_Pin GPIO_PIN_7
