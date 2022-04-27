@@ -16,8 +16,8 @@
 #include "image.h"
 #include <stdbool.h>
 
-//#define LCD_BL_ON() HAL_GPIO_WritePin(LCD_BL_GPIO_Port, LCD_BL_Pin, GPIO_PIN_SET)
-//#define LCD_BL_OFF() HAL_GPIO_WritePin(LCD_BL_GPIO_Port, LCD_BL_Pin, GPIO_PIN_RESET)
+#define LCD_BL_ON() HAL_GPIO_WritePin(LCD_BK_GPIO_Port, LCD_BK_Pin, GPIO_PIN_SET)
+#define LCD_BL_OFF() HAL_GPIO_WritePin(LCD_BK_GPIO_Port, LCD_BK_Pin, GPIO_PIN_RESET)
 
 #define LCD_BASE0        		((uint32_t)0x60000000)
 #define LCD_BASE1        		((uint32_t)0x60080000)

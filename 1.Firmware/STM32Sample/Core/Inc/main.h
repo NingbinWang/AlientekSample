@@ -31,7 +31,9 @@ extern "C" {
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "app_main.h"
+#include "BSP_Main.h"
+#include "stdio.h"
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/
@@ -57,6 +59,8 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define LED1_Pin GPIO_PIN_5
+#define LED1_GPIO_Port GPIOE
 #define OV_D0_Pin GPIO_PIN_0
 #define OV_D0_GPIO_Port GPIOC
 #define OV_D1_Pin GPIO_PIN_1
@@ -87,6 +91,8 @@ void Error_Handler(void);
 #define FIFO_WEN_GPIO_Port GPIOB
 #define FIFO_RCLK_Pin GPIO_PIN_4
 #define FIFO_RCLK_GPIO_Port GPIOB
+#define LED0_Pin GPIO_PIN_5
+#define LED0_GPIO_Port GPIOB
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */
